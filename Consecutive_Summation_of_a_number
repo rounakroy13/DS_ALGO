@@ -1,0 +1,23 @@
+//Input
+15
+
+//Output
+8,7
+6,5,4
+5,4,3,2,1
+
+var num=21;
+var temp = Math.ceil(num/2)
+for(var i=temp; i >0; i--) {
+    var newtemp = i;
+    var stemp = "" + i;
+    for(var j=i-1; j > 0; j--) {
+        newtemp = newtemp+j;
+        stemp = stemp + "," + j;
+        if(newtemp === num){
+            console.log(stemp)
+            break;
+        }
+    }
+
+} 
