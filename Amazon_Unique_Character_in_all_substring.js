@@ -11,12 +11,12 @@
 function printDistinct(str){
     var count = [];
     var ans = 0;
-    for(let i=0;i<26;i++)
+    for(var i=0;i<26;i++)
     {
         count[i]=0;
     }
 
-    for (i = 0; i < str.length; i++){
+    for (var i = 0; i < str.length; i++){
         if(str[i]!=' ' && (count[str[i].charCodeAt(0)-96]) <1){
             count[str[i].charCodeAt(0)-96]++;
             ans++;
